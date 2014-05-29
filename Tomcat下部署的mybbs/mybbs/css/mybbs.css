@@ -1,0 +1,20 @@
+.leftcolum{
+	float:left;
+	width:35%;
+	margin-right:15%;
+}
+.con{
+	font-size: 14px;
+	color:#444;
+	font-family:"Microsoft YaHei","Times New Roman";
+	line-height:1.5;
+	min-height:180px;
+}
+.regcolum{
+	float:left;
+	width:400px;
+	margin-left:35px;
+}
+.btn-myindex{
+	width:80px;
+}

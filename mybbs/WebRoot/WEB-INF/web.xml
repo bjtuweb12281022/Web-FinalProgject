@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>mybbs</display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserCheck</servlet-name>
+    <servlet-class>mybbs.UserCheck</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Fatie</servlet-name>
+    <servlet-class>mybbs.Fatie</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Reg</servlet-name>
+    <servlet-class>mybbs.Reg</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>newpass</servlet-name>
+    <servlet-class>mybbs.newpass</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Change</servlet-name>
+    <servlet-class>mybbs.Change</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>upload</servlet-name>
+    <servlet-class>mybbs.upload</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddReply</servlet-name>
+    <servlet-class>mybbs.AddReply</servlet-class>
+  </servlet>
+
+
+
+
+  <filter>
+    <filter-name>UrlRewriteFilter</filter-name>
+    <filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
+</filter>
+<filter-mapping>
+    <filter-name>UrlRewriteFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+    <dispatcher>REQUEST</dispatcher>
+    <dispatcher>FORWARD</dispatcher>
+</filter-mapping>
+  <servlet-mapping>
+    <servlet-name>UserCheck</servlet-name>
+    <url-pattern>/servlet/UserCheck</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Fatie</servlet-name>
+    <url-pattern>/servlet/Fatie</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Reg</servlet-name>
+    <url-pattern>/servlet/Reg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>newpass</servlet-name>
+    <url-pattern>/servlet/newpass</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Change</servlet-name>
+    <url-pattern>/servlet/Change</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>upload</servlet-name>
+    <url-pattern>/servlet/upload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddReply</servlet-name>
+    <url-pattern>/servlet/AddReply</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
